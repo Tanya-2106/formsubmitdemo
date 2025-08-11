@@ -87,7 +87,12 @@
     <div class="container">
         <h2>Employee Referral Form</h2>
         <form action="https://formsubmit.co/ba65cd4edd99a35d25bbbd8bc886af8c" method="POST">
-            <!-- Section 1 -->
+           <!--honeypot-->
+            <input type="text" name="_honey" style="display: none;">
+
+            <!--disable captcha-->
+            <input type="hidden" name="_captcha" value="false">
+           <!-- Section 1 -->
             <h3>Section 1: Referring Employee Details</h3>
             <label for="refName">Name:</label>
             <input type="text" id="refName" name="refName" required>
